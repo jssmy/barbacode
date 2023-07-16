@@ -1,0 +1,63 @@
+<app-header></app-header>
+
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                data-aos="fade-up" data-aos-delay="200">
+                <h1>Aprende a tu ritmo con {{'{'+appSettings.getNameTransform + '}'}}</h1>
+                <h2>Enfócate en tu desarrollo profesional y aprende con nuestros cursos especializados.</h2>
+                <h2>Tu momento ha llegado...</h2>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                  <app-button
+                    styled="filled"
+                    background="white"
+                    class="color-gray-800"
+                    [toRoute]="['/login']">
+                    Empieza aprender, es libre
+                  </app-button>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/software-developer.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<main id="main">
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Nuestros cursos</h2>
+            </div>
+
+            <div class="faq-list">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <app-course-card></app-course-card>
+                    </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <app-course-card></app-course-card>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <app-course-card></app-course-card>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <app-course-card></app-course-card>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <app-course-card></app-course-card>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3">
+                    <app-course-card></app-course-card>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Frequently Asked Questions Section -->
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,43 @@
+@import "/src/assets/variables";
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px 28px 11px 28px;
+  letter-spacing: 1px;
+}
+
+
+button.outline.primary {
+  --background: #754FFEFF;
+}
+
+
+button.filled.primary {
+  color: white !important;
+}
+
+
+button.primary {
+  background: $color-primary !important;
+  color: white;
+}
+
+button.primary:hover {
+  background: $color-primary !important;
+  color: white !important;
+}
+
+button.outline {
+  background: transparent !important;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--background) !important;
+}
+
+button.outline:hover{
+  background: var(--background) !important;
+}
+

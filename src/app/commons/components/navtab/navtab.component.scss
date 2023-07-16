@@ -1,0 +1,32 @@
+:host {
+    .nav-tabs .nav-item .nav-link {
+        padding: 16px 0;
+        font-weight: 500;
+        color: #64748b;
+        border: none
+    }
+    
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        border-color: #64748b;
+        color: #754ffe !important;
+        border-bottom: solid !important;
+        border-radius: 0px !important;
+    }
+    .nav-tabs .nav-item {
+        margin: 0 1.5rem;
+    }
+
+    @media (max-width: 576px) {
+        .nav-tabs {
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    }
+
+    .tab-content {
+        padding: 10px;  
+    }
+
+    
+}

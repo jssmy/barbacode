@@ -1,0 +1,11 @@
+<li class="list-group-item pointer">
+  <div  class="d-flex flex-row w-100  justify-content-between" (click)="onClick()">
+    <span class="col-md-11"><ng-content></ng-content></span>
+    <i id="{{idIconCollapsable}}" class="bi bi-chevron-compact-down col-md-1"></i>
+  </div>
+  <div id="{{idCollapable}}" class="collapse ps-0 ps-lg-3">
+    <ng-content select="[display-content]"></ng-content>
+  </div>
+</li>
+
+

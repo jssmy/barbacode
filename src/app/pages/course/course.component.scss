@@ -1,0 +1,81 @@
+@import "/src/assets/variables";
+:host {
+
+  #course-sumary {
+  background: $color-primary;
+    color: white;
+}
+  #course-sumary, #course-content {
+        overflow: inherit !important;
+    }
+    #course-sumary > .container > .row > div {
+        p{
+            font-size: 1.25em;
+            font-weight: 500;
+            letter-spacing: -0.03rem;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+    }
+
+    app-navtab {
+        margin-top: -3.75em;
+        display: block;
+    }
+
+    .course-points {
+        color: yellowgreen;
+    }
+
+
+.course-preview {
+   margin-top: -11.9em;
+}
+
+  @media (max-width: 576px)
+  {
+    .course-preview {
+      margin-top: 0px;
+    }
+  }
+
+  @media (min-width: 540px)
+  {
+    .course-preview {
+      margin-top: 0px;
+    }
+  }
+
+  @media (min-width: 720px)
+  {
+    .course-preview {
+      margin-top: 0px;
+    }
+  }
+
+
+  @media (min-width: 992px)
+  {
+    .course-preview {
+      margin-top: -9.7em;
+    }
+  }
+
+  @media (min-width: 1140px)
+  {
+    .course-preview {
+      margin-top: -13.9em;
+    }
+  }
+
+  .card-img-top {
+    border-radius: 5px;
+  }
+
+  .avatar {
+    height: 5em;
+  }
+
+
+}

@@ -1,7 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: () => import('./pages/home/home.module').then(module => module.HomeModule)
+  },
+  {
+    path: 'course/:slug',
+    loadChildren: () => import('./pages/course/course.module').then(module => module.CourseModule)
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./pages/login/login.component').then(component => component.LoginComponent)
+  },
+  {
+    path: '**',
+    loadComponent: () => import('./pages/not-found/not-found.component').then(component => component.NotFoundComponent)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,23 @@
+@import "/src/assets/_variables.scss";
+#header {
+  background: white;
+  padding: 5px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+
+.logo h6,  .logo h5{
+  color: $color-gray-800;
+}
+
+.navbar > ul > li {
+  span {
+    font-family: "Open Sans", sans-serif;
+  }
+  a, ul {
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 0px;
+      color: $color-gray-800;
+  }
+}
