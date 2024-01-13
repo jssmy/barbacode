@@ -2,3 +2,16 @@ $color-gray-800: #1e293b;
 $color-primary: #754ffe;
 $color-purpure: rgba(255, 255, 255, 0.6);
 
+
+.color-primary {
+    color: $color-primary !important;
+}
+
+.background-primary {
+    background-color: $color-primary !important;
+}
+
+.background-white {
+    background-color: white !important;
+}
+

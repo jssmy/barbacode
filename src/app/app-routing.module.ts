@@ -15,6 +15,10 @@ const routes: Routes = [
     loadComponent: () => import('./pages/login/login.component').then(component => component.LoginComponent)
   },
   {
+    path: 'confirm-account/:idToken',
+    loadComponent: () => import('./pages/confirm-account/confirm-account.component').then(component => component.ConfirmAccountComponent)
+  },
+  {
     path: '**',
     loadComponent: () => import('./pages/not-found/not-found.component').then(component => component.NotFoundComponent)
   }

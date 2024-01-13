@@ -9,23 +9,22 @@ import { ModuleCourse } from 'src/app/commons/interfaces/module-course';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent {
-  tabs: Navtab[] = [
+  tabContent: Navtab[] = [
     {
       id: 'conent-tab',
-      label: 'Contenido',
+      label: 'Contenido del curso',
       toogleTarget: 'content-tab-container'
-    },
-    {
-      id: 'description-tab',
-      label: 'Descripción',
-      toogleTarget: 'description-tab-container'
-    },
-    {
-      id: 'valoration-tab',
-      label: 'Valoraciones',
-      toogleTarget: 'valoration-tab-container'
     }
   ];
+
+  tabDescription: Navtab[] = [
+    {
+      id: 'description-tab',
+      label: 'Descripción del curso',
+      toogleTarget: 'description-tab-container'
+    }
+  ];
+
   contentModules: ModuleCourse[] = [
       {
        items: [

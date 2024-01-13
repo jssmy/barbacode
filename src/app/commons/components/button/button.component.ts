@@ -18,7 +18,7 @@ export class ButtonComponent implements OnInit{
   @Input() styled?: StyledButton = 'filled';
   @Input() color?: string = 'inherit';
   @Input() background?: string;
-  @Input() toRoute?: string[];
+  @Input() navigate?: string[];
 
   @Input() styleClass? = {};
 
@@ -29,7 +29,6 @@ export class ButtonComponent implements OnInit{
   ngOnInit(): void {
     this.addAttribButton('color');
     this.addAttribButton('background');
-    console.log(this.styleClass);
   }
 
   private addAttribButton(attrName: string): void {
@@ -52,8 +51,8 @@ export class ButtonComponent implements OnInit{
   }
 
   onClick() {
-    if(this.toRoute) {
-      this.router.navigate(this.toRoute).finally();
+    if(this.navigate) {
+      this.router.navigate(this.navigate).finally();
     }
   }
 }

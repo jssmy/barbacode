@@ -30,8 +30,14 @@
 <section id="course-content" class="pt-0">
   <div class="container d-lg-flex">
     <div class="mb-4 mb-lg-0 col-lg-8 col-md-12 col-sm-12">
-      <app-navtab [tabs]="tabs">
-        <div class="tab-pane fade" id="content-tab-container">
+      <app-navtab [tabs]="tabDescription">
+        <div  display-content class="tab-pane fade" id="description-tab-container">
+          El Mejor y más completo curso de Python en todo Udemy - Universidad Python de Cero a Experto con  +71 hrs de video, +196,000 alumnos inscritos al curso. Este es el mejor curso para aprender Python de Cero a Experto incluyendo los Frameworks de Django y Flask, con una calificación promedio de 4.7 (de 5 estrellas), una de las mejores calificaciones en cursos de Python.
+        </div>
+
+      </app-navtab>
+      <app-navtab [tabs]="tabContent">
+        <div  display-content class="tab-pane fade" id="content-tab-container">
           <ul class="list-group">
             <app-list-item *ngFor="let module of contentModules">
               <h6>{{module.name}}</h6>
@@ -49,143 +55,15 @@
           </ul>
 
         </div>
-        <div class="tab-pane fade" id="description-tab-container">
 
-        </div>
-        <div class="tab-pane fade" id="valoration-tab-container">
-          <div class="mb-3">
-            <h3 class="mb-4">How students rated this courses</h3>
-            <div class="align-items-center row">
-              <div class="text-center col-auto"><h3 class="display-2 fw-bold">4.5</h3><span class="text-warning"><svg
-                viewBox="0 0 24 24" role="presentation" style="width: 0.875rem; height: 0.875rem;"><path
-                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                              style="width: 0.875rem; height: 0.875rem;"><path
-                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                              style="width: 0.875rem; height: 0.875rem;"><path
-                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                              style="width: 0.875rem; height: 0.875rem;"><path
-                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                              style="width: 0.875rem; height: 0.875rem;"><path
-                d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                style="fill: currentcolor;"></path></svg></span>
-                <p class="mb-0 fs-6">(Based on 27 reviews)</p></div>
-              <div class="pt-3 order-3 order-md-2 col">
-                <div class="mb-3 progress" style="height: 6px;">
-                  <div role="progressbar" class="progress-bar bg-warning" aria-valuenow="50" aria-valuemin="0"
-                       aria-valuemax="100" style="width: 50%;"></div>
-                </div>
-                <div class="mb-3 progress" style="height: 6px;">
-                  <div role="progressbar" class="progress-bar bg-warning" aria-valuenow="36" aria-valuemin="0"
-                       aria-valuemax="100" style="width: 36%;"></div>
-                </div>
-                <div class="mb-3 progress" style="height: 6px;">
-                  <div role="progressbar" class="progress-bar bg-warning" aria-valuenow="9" aria-valuemin="0"
-                       aria-valuemax="100" style="width: 9%;"></div>
-                </div>
-                <div class="mb-3 progress" style="height: 6px;">
-                  <div role="progressbar" class="progress-bar bg-warning" aria-valuenow="3" aria-valuemin="0"
-                       aria-valuemax="100" style="width: 3%;"></div>
-                </div>
-                <div class="mb-3 progress" style="height: 6px;">
-                  <div role="progressbar" class="progress-bar bg-warning" aria-valuenow="2" aria-valuemin="0"
-                       aria-valuemax="100" style="width: 2%;"></div>
-                </div>
-              </div>
-              <div class="order-2 order-md-3 col-md-auto col-6">
-                <div><span class="text-warning"><svg viewBox="0 0 24 24" role="presentation"
-                                                     style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg></span><span class="ms-4">50%</span></div>
-                <div><span class="text-warning"><svg viewBox="0 0 24 24" role="presentation"
-                                                     style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg></span><span class="ms-4">36%</span></div>
-                <div><span class="text-warning"><svg viewBox="0 0 24 24" role="presentation"
-                                                     style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg></span><span class="ms-4">9%</span></div>
-                <div><span class="text-warning"><svg viewBox="0 0 24 24" role="presentation"
-                                                     style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg></span><span class="ms-4">3%</span></div>
-                <div><span class="text-warning"><svg viewBox="0 0 24 24" role="presentation"
-                                                     style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg><svg viewBox="0 0 24 24" role="presentation"
-                                                                style="width: 0.875rem; height: 0.875rem;"><path
-                  d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
-                  style="fill: currentcolor;"></path></svg></span><span class="ms-4">2%</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
       </app-navtab>
+     
     </div>
+
     <div class="col-lg-4 col-md-12 col-sm-12 ps-lg-4">
       <div class="card course-preview p-1">
         <img src="https://geeks-react.netlify.app/static/media/course-javascript.8afdeff32816e30422da.jpg"
-             class="card-img-top" alt="">
+          class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title mt-3 mb-3 fw-bold">S./ Es libre</h5>
           <app-button type="primary">Subscribirse</app-button>
@@ -196,22 +74,30 @@
           <div class="d-flex align-items-center">
             <div class="position-relative">
               <img src="https://geeks-react.netlify.app/static/media/avatar-1.d2fd9642fd3628734b27.jpg" alt=""
-                   class="rounded-circle avatar">
+                class="rounded-circle avatar">
             </div>
-            <div class="ms-4"><h4 class="mb-0">Jenny Wilson</h4>
+            <div class="ms-4">
+              <h4 class="mb-0">Jenny Wilson</h4>
               <p class="mb-1 fs-6">Front-end Developer, Designer</p><span class="fs-6"><span
-                class="text-warning">4.5</span><span
-                class="mdi mdi-star text-warning me-2"></span>Instructor Rating</span></div>
+                  class="text-warning">4.5</span><span class="mdi mdi-star text-warning me-2"></span>Instructor
+                Rating</span>
+            </div>
           </div>
           <div class="border-top mt-3 border-bottom mb-3 g-0 row">
             <div class="col">
-              <div class="pe-1 ps-2 py-3"><h5 class="mb-0">11,604</h5><span>Students</span></div>
+              <div class="pe-1 ps-2 py-3">
+                <h5 class="mb-0">11,604</h5><span>Students</span>
+              </div>
             </div>
             <div class="border-start col">
-              <div class="pe-1 ps-3 py-3"><h5 class="mb-0">32</h5><span>Courses</span></div>
+              <div class="pe-1 ps-3 py-3">
+                <h5 class="mb-0">32</h5><span>Courses</span>
+              </div>
             </div>
             <div class="border-start col">
-              <div class="pe-1 ps-3 py-3"><h5 class="mb-0">12,230</h5><span>Reviews</span></div>
+              <div class="pe-1 ps-3 py-3">
+                <h5 class="mb-0">12,230</h5><span>Reviews</span>
+              </div>
             </div>
           </div>
           <p>I am an Innovation designer focussing on UX/UI based in Berlin. As a creative resident at Figma explored
@@ -221,4 +107,5 @@
     </div>
   </div>
 </section>
+
 <app-footer></app-footer>

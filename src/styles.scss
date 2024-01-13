@@ -1900,3 +1900,33 @@ NUEVOS ESTILOS
   border: none !important;
 }
 
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.aling-content-center {
+  align-content: center;
+}
+
+.aling-items-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
