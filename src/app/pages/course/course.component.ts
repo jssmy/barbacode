@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Navtab } from 'src/app/commons/interfaces/nav-tab';
-import {ListItem} from "../../commons/interfaces/list-item";
 import { ModuleCourse } from 'src/app/commons/interfaces/module-course';
 
 @Component({
@@ -26,8 +25,8 @@ export class CourseComponent {
   ];
 
   contentModules: ModuleCourse[] = [
-      {
-       items: [
+    {
+      items: [
         {
           name: 'Introducción',
           timeStamps: 1,
@@ -40,25 +39,25 @@ export class CourseComponent {
           name: 'Promsesas y obserbables',
           timeStamps: 3,
         }
-       ],
-       name: 'Introducción a JavaScript'
-      },
-      {
-        items: [
-         {
-           name: 'Instalación Viscual Code',
-           timeStamps: 1,
-         },
-         {
-           name: 'Instalación de Apache2',
-           timeStamps: 2,
-         },
-         {
-           name: 'Promsesas y obserbables',
-           timeStamps: 3,
-         }
-        ],
-        name: 'Instalación de ambiente de desarrollo'
-       }
-    ];
+      ],
+      name: 'Introducción a JavaScript'
+    },
+    {
+      items: [
+        {
+          name: 'Instalación Viscual Code',
+          timeStamps: 1,
+        },
+        {
+          name: 'Instalación de Apache2',
+          timeStamps: 2,
+        },
+        {
+          name: 'Promsesas y obserbables',
+          timeStamps: 3,
+        }
+      ],
+      name: 'Instalación de ambiente de desarrollo'
+    }
+  ];
 }
