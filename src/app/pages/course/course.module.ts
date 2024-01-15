@@ -4,11 +4,11 @@ import { CourseComponent } from './course.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from 'src/app/commons/layouts/header/header.component';
 import { FooterComponent } from 'src/app/commons/layouts/footer/footer.component';
-import { BreadcrumbComponent } from 'src/app/commons/breadcrumb/breadcrumb.component';
 import { NavtabComponent } from 'src/app/commons/components/navtab/navtab.component';
 import {ListGroupComponent} from "../../commons/components/list-group/list-group.component";
 import {ListItemComponent} from "../../commons/components/list-item/list-item.component";
 import {ButtonComponent} from "../../commons/components/button/button.component";
+import { BreadcrumbComponent } from 'src/app/commons/components/breadcrumb/breadcrumb.component';
 
 const routes: Routes = [
   {

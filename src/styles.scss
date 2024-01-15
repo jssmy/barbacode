@@ -463,7 +463,6 @@ body {
 
   @media (max-width: 991px) {
     #hero {
-      height: 100vh;
       text-align: center;
     }
 
@@ -483,7 +482,7 @@ body {
 
   @media (max-width: 768px) {
     #hero h1 {
-      font-size: 28px;
+      font-size: 35px;
       line-height: 36px;
     }
 
@@ -1677,7 +1676,7 @@ body {
 
   #footer .footer-top {
     padding: 60px 0 30px 0;
-    background: #fff;
+    
   }
 
   #footer .footer-top .footer-contact {
@@ -1858,7 +1857,7 @@ NUEVOS ESTILOS
   .card {
     padding: 0px;
     border: 0;
-    box-shadow: 0 1px 3px rgb(3 0 71 / 9%)
+    // box-shadow: 0 1px 3px rgb(3 0 71 / 9%)
   }
 
   .card:hover {
@@ -1884,7 +1883,7 @@ NUEVOS ESTILOS
 .card {
     padding: 0px;
     border: 0;
-    box-shadow: 0 1px 3px rgb(3 0 71 / 9%)
+    // box-shadow: 0 1px 3px rgb(3 0 71 / 9%)
 }
 
 .card:hover {
@@ -1929,4 +1928,34 @@ NUEVOS ESTILOS
 
 .flex {
   display: flex;
+}
+
+.fill-white {
+  fill: white;
+}
+
+.fill-warning {
+  fill: #f7c32e !important
+}
+
+.rounded-40 {
+  border-radius: 40px;
+}
+
+.opacity-5 {
+  opacity: 0.5 !important;
+}
+
+.h-100px {
+  height: 100px !important;
+}
+
+@media (min-width: 576px){
+  .h-sm-200px {
+      height: 200px !important;
+  }
+}
+
+.display-none {
+  display: none;
 }

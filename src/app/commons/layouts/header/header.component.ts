@@ -18,9 +18,5 @@ import {CommonModule} from "@angular/common";
 export class HeaderComponent {
   appSettings = AppSettings;
   constructor() {
-    document.addEventListener('scroll', () => {
-      document.documentElement.dataset['scroll'] = window.scrollY.toString();
-      console.log(window.scrollY.toString());
-    });
   }
 }

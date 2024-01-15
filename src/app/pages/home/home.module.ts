@@ -6,6 +6,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FooterComponent } from '../../commons/layouts/footer/footer.component';
 import { CourseCardComponent } from 'src/app/commons/components/course-card/course-card.component';
 import {ButtonComponent} from "../../commons/components/button/button.component";
+import { MoreCardComponent } from 'src/app/commons/components/more-card/more-card.component';
+import { NewsComponent } from './commons/components/news/news.component';
 
 const routes: Routes = [
   {
@@ -15,13 +17,14 @@ const routes: Routes = [
 ];
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, NewsComponent],
   imports: [
     CommonModule,
     HeaderComponent,
     FooterComponent,
     CourseCardComponent,
     ButtonComponent,
+    MoreCardComponent,
     RouterModule.forChild(routes)
   ],
   exports: [HomeComponent]
